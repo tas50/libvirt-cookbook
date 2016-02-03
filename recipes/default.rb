@@ -10,5 +10,5 @@ end
   end
 end
 
-$LOAD_PATH.delete("/usr/bin/../lib") # scumbag LOAD_PATH: https://github.com/opscode/chef/blob/master/bin/chef-solo#L22
+$LOAD_PATH.delete("/usr/bin/../lib") # scumbag LOAD_PATH: https://github.com/chef/chef/blob/master/bin/chef-solo#L22
 require 'libvirt'
