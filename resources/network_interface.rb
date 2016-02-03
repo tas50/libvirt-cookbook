@@ -1,9 +1,5 @@
 actions :attach
-
-def initialize(*args)
-  super
-  @action = :attach
-end
+default_action :attach
 
 attribute :mac_address, :kind_of => String, :name_attribute => true
 attribute :type,   :kind_of => String, :default => 'bridge'

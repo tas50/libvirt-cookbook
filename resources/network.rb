@@ -1,9 +1,5 @@
 actions :define, :create, :autostart
-
-def initialize(*args)
-  super
-  @action = :define
-end
+default_action :define
 
 attribute :bridge, :kind_of => String
 attribute :netmask, :kind_of => String

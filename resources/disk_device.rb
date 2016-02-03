@@ -1,9 +1,5 @@
 actions :attach
-
-def initialize(*args)
-  super
-  @action = :attach
-end
+default_action :attach
 
 attribute :type,   :kind_of => String, :default => 'block'
 attribute :bus,    :kind_of => String, :default => 'virtio'
